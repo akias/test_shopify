@@ -41523,11 +41523,19 @@ __webpack_require__.r(__webpack_exports__);
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
+var img = 'https://cdn.shopify.com/s/files/1/0757/9955/files/empty-state.svg';
 
 var Index = function Index() {
-  return __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["Page"], null, __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["Layout"], null, __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["TextStyle"], {
-    variation: "positive"
-  }, "Sample app using React and Next.js")));
+  return __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["Page"], null, __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["Layout"], null, __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["EmptyState"], {
+    heading: "Discount your products temporarily",
+    action: {
+      content: 'Select products',
+      onAction: function onAction() {
+        return console.log('clicked');
+      }
+    },
+    image: img
+  }, __jsx("p", null, "Select products to change their price temporarily."))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
